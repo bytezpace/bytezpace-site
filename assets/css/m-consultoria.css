@@ -1,0 +1,163 @@
+/* ===== Modelo "Marina Alves" — marca pessoal dark, editorial e minimalista ===== */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500&display=swap");
+
+:root {
+  --bg: #131311;
+  --bg-2: #1a1a17;
+  --fg: #ece7dd;
+  --dim: #9c988c;
+  --amber: #e0a049;
+  --line: #2e2c27;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 28px; }
+
+h1, h2, h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 .5em;
+  letter-spacing: -0.01em;
+}
+h1 { font-size: clamp(2.6rem, 6vw, 4rem); }
+h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); }
+h3 { font-size: 1.3rem; }
+p { margin: 0 0 1.1rem; }
+
+em { color: var(--amber); font-style: italic; }
+
+.label {
+  display: block;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .24em;
+  font-size: .72rem;
+  color: var(--amber);
+  margin-bottom: 1.4rem;
+}
+
+.rule { width: 100%; height: 1px; background: var(--line); border: 0; margin: 0; }
+
+/* Demo bar */
+.demo {
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--line);
+  color: var(--dim);
+  text-align: center;
+  font-size: .8rem;
+  letter-spacing: .03em;
+  padding: 9px 16px;
+}
+.demo a { color: var(--amber); }
+
+/* Header */
+.top {
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(19, 19, 17, .82);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.top__in { display: flex; align-items: center; justify-content: space-between; padding: 18px 28px; max-width: 860px; margin: 0 auto; }
+.brand { font-family: "Fraunces", serif; font-size: 1.3rem; color: var(--fg); text-decoration: none; }
+.top nav { display: flex; gap: 28px; }
+.top nav a { color: var(--dim); text-decoration: none; font-size: .82rem; text-transform: uppercase; letter-spacing: .14em; }
+.top nav a:hover { color: var(--fg); }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: .88rem;
+  letter-spacing: .02em;
+  padding: 14px 28px;
+  text-decoration: none;
+  border: 1px solid var(--fg);
+  color: var(--fg);
+  background: transparent;
+  border-radius: 999px;
+  transition: background .2s, color .2s, border-color .2s;
+}
+.btn:hover { background: var(--fg); color: var(--bg); }
+.btn--amber { background: var(--amber); border-color: var(--amber); color: #1a1205; }
+.btn--amber:hover { background: transparent; color: var(--amber); }
+
+/* Hero */
+.hero { padding: 110px 0 90px; }
+.hero h1 { max-width: 16ch; }
+.hero h1 em { display: block; }
+.hero p { max-width: 48ch; color: var(--dim); font-size: 1.15rem; margin: 1.6rem 0 2.4rem; }
+
+/* Sections */
+.sec { padding: 82px 0; }
+.sec--alt { background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.sec__lead { max-width: 52ch; color: var(--dim); }
+
+/* Numbered services */
+.svc { margin-top: 40px; }
+.svc__item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
+  padding: 30px 0;
+  border-top: 1px solid var(--line);
+}
+.svc__item:last-child { border-bottom: 1px solid var(--line); }
+.svc__n { font-family: "Fraunces", serif; color: var(--amber); font-size: 1.4rem; }
+.svc__item h3 { margin-bottom: .3em; }
+.svc__item p { color: var(--dim); margin: 0; font-size: .98rem; }
+
+/* Quotes */
+.quotes { margin-top: 20px; display: grid; gap: 36px; }
+.quote { border-left: 2px solid var(--amber); padding-left: 22px; }
+.quote p { font-family: "Fraunces", serif; font-size: 1.25rem; font-style: italic; margin: 0 0 .5rem; }
+.quote cite { color: var(--dim); font-style: normal; font-size: .82rem; text-transform: uppercase; letter-spacing: .14em; }
+
+/* Contact block */
+.contact { display: grid; gap: 8px; margin-top: 30px; }
+.contact div { display: flex; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line); color: var(--dim); }
+.contact div:last-child { border-bottom: 1px solid var(--line); }
+.contact strong { color: var(--fg); min-width: 120px; font-weight: 500; }
+
+/* Final CTA */
+.end { padding: 100px 0; text-align: center; }
+.end p { color: var(--dim); max-width: 46ch; margin: 1rem auto 2rem; }
+
+.foot {
+  border-top: 1px solid var(--line);
+  color: var(--dim); text-align: center;
+  padding: 26px; font-size: .8rem; letter-spacing: .03em;
+}
+.foot a { color: var(--fg); }
+
+.float {
+  position: fixed; right: 22px; bottom: 22px; z-index: 30;
+  background: var(--amber); color: #1a1205;
+  font-family: "Inter", sans-serif; font-weight: 600;
+  font-size: .82rem; text-decoration: none;
+  padding: 13px 20px; border-radius: 999px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .4);
+}
+.float:hover { filter: brightness(1.06); }
+
+@media (max-width: 720px) {
+  .top nav { display: none; }
+  .hero { padding: 72px 0 56px; }
+  .sec { padding: 58px 0; }
+  .svc__item { grid-template-columns: 40px 1fr; gap: 14px; }
+}
