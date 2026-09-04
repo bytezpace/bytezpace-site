@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bytezpace — Tecnologia, IA e criação de sites em Brasília</title>
   <meta name="description"
-    content="A Bytezpace cria sites profissionais acessíveis a partir de R$ 199/mês, sem custo de criação, e desenvolve produtos digitais com IA. Brasília, DF.">
+    content="A Bytezpace cria sites profissionais acessíveis a partir de R$ 219/mês, sem custo de criação, e desenvolve produtos digitais com IA. Brasília, DF.">
   <link rel="canonical" href="https://bytezpace.com.br/">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#21146a">
@@ -20,7 +20,7 @@
   <meta property="og:url" content="https://bytezpace.com.br/">
   <meta property="og:title" content="Bytezpace — Tecnologia, IA e criação de sites em Brasília">
   <meta property="og:description"
-    content="Sites profissionais acessíveis a partir de R$ 199/mês, sem custo de criação, e produtos digitais com inteligência artificial.">
+    content="Sites profissionais acessíveis a partir de R$ 219/mês, sem custo de criação, e produtos digitais com inteligência artificial.">
   <meta property="og:image" content="https://bytezpace.com.br/assets/img/banner/hero-banner.png">
   <meta property="og:image:width" content="637">
   <meta property="og:image:height" content="436">
@@ -28,7 +28,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Bytezpace — Tecnologia, IA e criação de sites em Brasília">
   <meta name="twitter:description"
-    content="Sites acessíveis a partir de R$ 199/mês e produtos digitais com IA.">
+    content="Sites acessíveis a partir de R$ 219/mês e produtos digitais com IA.">
   <meta name="twitter:image" content="https://bytezpace.com.br/assets/img/banner/hero-banner.png">
 
   <link rel="icon" href="assets/img/favicon.png" type="image/png">
@@ -42,19 +42,25 @@
       <a class="header__logo" href="#top">
         <img src="assets/img/logo.png" alt="Bytezpace" width="118">
       </a>
-      <nav class="header__nav">
-        <a href="#top">Home</a>
-        <a href="#quem-somos">Quem somos</a>
-        <a href="#remitia">Remitia</a>
-        <a href="presenca-digital.html">Presença Digital</a>
-        <a href="presenca-digital.html#portfolio">Portfólio</a>
-      </nav>
-      <a class="btn btn--whatsapp btn--sm"
-        href="https://wa.me/5561998340338?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Bytezpace."
-        target="_blank" rel="noopener">
-        <img src="assets/img/wa-icon.png" alt="" width="18" height="18">
-        Fale no WhatsApp
-      </a>
+      <button class="header__burger" type="button" id="menu-toggle"
+        aria-label="Abrir menu" aria-expanded="false" aria-controls="header-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="header__menu" id="header-menu">
+        <nav class="header__nav">
+          <a href="#top">Home</a>
+          <a href="#quem-somos">Quem somos</a>
+          <a href="#remitia">Remitia</a>
+          <a href="presenca-digital.html">Presença Digital</a>
+          <a href="presenca-digital.html#portfolio">Portfólio</a>
+        </nav>
+        <a class="btn btn--whatsapp btn--sm"
+          href="https://wa.me/5561998340338?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Bytezpace."
+          target="_blank" rel="noopener">
+          <img src="assets/img/wa-icon.png" alt="" width="18" height="18">
+          Fale no WhatsApp
+        </a>
+      </div>
     </div>
   </header>
 
@@ -131,9 +137,17 @@
       </div>
     </section>
 
-    <!-- ===================== Remitia ===================== -->
+    <!-- ===================== Produtos e serviços ===================== -->
     <section id="remitia" class="section section--alt">
       <div class="container">
+        <div class="section__intro">
+          <h2>Nossos produtos e serviços</h2>
+          <p class="section__lead">
+            Do aplicativo gratuito ao site sob medida: soluções prontas para colocar o seu
+            negócio no digital.
+          </p>
+        </div>
+
         <div class="showcase">
           <div class="showcase__art showcase__art--remitia">
             <div class="phone">
@@ -193,7 +207,7 @@
               O investimento é só a mensalidade, com hospedagem e suporte inclusos.
             </p>
             <div class="showcase__price">
-              <b>R$ 199</b>
+              <b>R$ 219</b>
               <span>por mês no plano anual</span>
             </div>
             <div class="showcase__actions">
@@ -235,6 +249,7 @@
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/menu.js" defer></script>
 
   <!-- ===================== Dados estruturados ===================== -->
   <script type="application/ld+json">
@@ -265,9 +280,9 @@
         "name": "Bytezpace — Criação de sites",
         "url": "https://bytezpace.com.br/presenca-digital.html",
         "image": "https://bytezpace.com.br/assets/img/logo.png",
-        "description": "Criação de sites baratos e acessíveis para pequenos negócios, sem custo de criação e com mensalidade de R$ 199 no plano anual.",
+        "description": "Criação de sites baratos e acessíveis para pequenos negócios, sem custo de criação e com mensalidade de R$ 219 no plano anual.",
         "telephone": "+55-61-99834-0338",
-        "priceRange": "R$ 199/mês",
+        "priceRange": "R$ 219/mês",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Brasília",
